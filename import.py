@@ -1,9 +1,11 @@
+#
 import requests as rq 
 from bs4 import BeautifulSoup as bs
 import re
 from openpyxl import Workbook
 
 #전체 url 추출
+
 linklist=[]
 cn = 0
 while cn < 41:
@@ -18,6 +20,7 @@ while cn < 41:
         except:
             pass
     cn +=1
+
 
 #엑셀삽입
 wb = Workbook()
